@@ -13,31 +13,91 @@
 body {
     margin: 0;
     padding: 0;
-    background: #DCE35B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
+    background: #3494E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
     
 }
 
 form {
+    display: flex;
+    flex-direction:column;
     font-family: sans-serif;
     margin:  100px auto;
     width: 400px;
     background-color: aliceblue;
-    padding: 70px;
+    padding: 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
 }
+
+.textbox {
+    padding: 10px;
+    width: 100%;
+    margin: 10px ;
+    border-radius: 15px; 
+    border: 1px solid #E8E8E8;
+    height: 25px;
+}
     
     </style>
     <main>
+
         <form>
-           <h2>Survey</h2>
-           <label for="name">
-                <input type = "textbox" placeholder="First Name">
-           </label>
+        <div id="text-box-section">
+           <label for="name">*NAME:</label>
+            <input class="textbox" type = "textbox" placeholder="First Name" required>
+          
+           <label for="email">*EMAIL:</label> 
+            <input class ="textbox"type = "textbox" placeholder="Email">
+         
+           <label for="age">*AGE:</label>
+            <input class ="textbox"type = "Number" placeholder="Age" min="18" max="30">
+          
+        </div>
+        <!-- Dropdown -->
+        <label for="tech-field">WHAT FIELD OF TECHNOLOGY YOU INTERESTED IN ? :</label>    
+        <select id="tech-field" name="tech-field">
+            <option value="Web Technology">Web Technology</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Penetration Testing">Penetration Testing</option>
+            <option value="Networking">Networking</option>
+          </select>
+        <!-- Radio Buttons -->  
+        <div>               
+           <label for="name">HOW LONG YOU WOULD LIKE TO STUDY WITH US ? :</label>
+
+            <label for="study-time">1 YEAR</label>
+            <input class="textbox" type = "radio" name="study-time">
+
+            <label for="2 YEARS">2 YEARS</label> 
+            <input class ="textbox"type = "radio" name ="study-time">
+           
+            <label for="3 YEARS">3 YEARS</label>
+            <input class ="textbox"type = "Radio" name="study-time">
+           
+        </div>
+       <!-- checkboxes -->
+       <label for="email">
+        <input class ="checkbox"type = "checkbox" >
+       </label> <label for="Email">
+        <input class ="checkbox"type = "checkbox">
+       </label>
+       <label for="email">
+        <input class ="checkbox"type = "checkbox" >
+       </label> <label for="Email">
+        <input class ="checkbox"type = "checkbox">
+       </label>
+       <label>Tell Us More</label>
+           <!-- Text area -->
+           <input type="textarea" w200 l200>
+      
+
+       <!-- <button>Submit</button> -->
+       <button>Submit</button>
         </form>
     </main>
 
