@@ -1,0 +1,106 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+/* No select highlighting */
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div {
+    margin: 10px;
+    padding: 10px;
+}
+
+form {
+    color: 	#A8A8A8;
+    display: flex;
+    flex-direction:column;
+    font-family: sans-serif;
+    margin:  50px auto;
+    width: 40%;
+    background-color: aliceblue;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    
+    
+}
+
+label {
+    margin: 8px;
+}
+
+.textbox {
+    padding: 10px;
+    width: 100%;
+    margin: 10px ;
+    border-radius: 15px; 
+    border: 1px solid #E8E8E8;
+    height: 25px;
+    
+}
+    #tech-field {
+     padding: 10px;
+     width: 220px;
+     float: right;
+     border-radius: 5px;
+     height: 20px;
+     border: 1px solid #E8E8E8;
+     color: black;
+
+    }
+
+    .radio-checkbox-section {
+     display: flex;
+     flex-direction: row;
+     flex-wrap:nowrap; 
+     padding: 10px;
+     margin: 10px;
+     max-height: 100%;
+  overflow-y:auto;
+     
+    }
+
+   
+
+    textarea {
+        
+        border-radius: 5px;
+        border: 1px solid #E8E8E8;
+        margin: 20px auto;
+        font: 14px;
+        width: 80%;
+    }
+
+    #submit {
+        margin: auto;
+        width: 25%;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #E8E8E8;
+        background:#3494E6;
+        color: white;
+
+    }

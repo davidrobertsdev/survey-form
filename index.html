@@ -5,110 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="script.css" rel="stylesheet">
 </head>
 <body>
     <!-- styles -->
-    <style>
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #3494E6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    
-}
-
-/* No select highlighting */
-.noSelect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-div {
-    margin: 10px;
-    padding: 10px;
-}
-
-form {
-    color: 	#A8A8A8;
-    display: flex;
-    flex-direction:column;
-    font-family: sans-serif;
-    margin:  50px auto;
-    width: 40%;
-    background-color: aliceblue;
-    padding: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    
-    
-}
-
-label {
-    margin: 8px;
-}
-
-.textbox {
-    padding: 10px;
-    width: 100%;
-    margin: 10px ;
-    border-radius: 15px; 
-    border: 1px solid #E8E8E8;
-    height: 25px;
-    
-}
-    #tech-field {
-     padding: 10px;
-     width: 220px;
-     float: right;
-     border-radius: 5px;
-     height: 20px;
-     border: 1px solid #E8E8E8;
-    }
-
-    .radio-checkbox-section {
-     display: flex;
-     flex-direction: row;
-    
-    }
-
-   
-
-    textarea {
-        
-        border-radius: 5px;
-        border: 1px solid #E8E8E8;
-        margin: 20px auto;
-        font: 14px;
-        width: 80%;
-    }
-
-    #submit {
-        margin: auto;
-        width: 25%;
-        padding: 15px;
-        border-radius: 5px;
-        border: 1px solid #E8E8E8;
-        background:#3494E6;
-        color: white;
-
-    }
-    </style>
+  
     <main>
-
         <form>
+            <h1>Tech Engine Coding Bootcamp Survey</h1>
         <div id="text-box-section">
            <label for="name">*NAME:</label>
-            <input class="textbox noSelect" type = "textbox" placeholder="First Name" required>
+            <input class="textbox noSelect" type = "textbox" placeholder="Name" required>
           
            <label for="email">*EMAIL:</label> 
             <input class ="textbox"type = "textbox" placeholder="Email">
@@ -142,23 +49,17 @@ label {
         </div >
         </div>
        <!-- checkboxes --> 
-       <label for ="checkboxes">WHICH LEARNING STYLE DO YOU PREFER ? :</label>
+       <label style="width:200px" for ="checkboxes">WHICH LEARNING STYLE DO YOU PREFER ? :</label>
        <div class ="radio-checkbox-section">
 
-       <label for="self-learning">SELF LEARNING</label> 
-        <input class ="checkbox" type = "checkbox" >
-
        <label for="learn-with-teacher">LEARNING WITH TEACHER</label>
-        <input class ="checkbox"type = "checkbox">
+        <input class ="checkbox"type = "checkbox" name="teacher">
        
        <label for="group-learning">GROUP LEARNING</label>
-        <input class ="checkbox"type = "checkbox" >
+        <input class ="checkbox"type = "checkbox" name="teacher">
 
         <label for="online-learning">ONLINE LEARNING</label>
-        <input class ="checkbox"type = "checkbox">
-       
-     <label for="Private learning">PRIVATE LEARNING</label>
-        <input class ="checkbox"type = "checkbox">
+        <input class ="checkbox"type = "checkbox" name="teacher">
       
     </div>
        <label>TELL US MORE:</label>
